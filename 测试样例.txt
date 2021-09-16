@@ -1,0 +1,62 @@
+
+create table studenttest(id int primary key unique not null,name char(10) not null,age int);
+
+alter table student add columntest int;
+
+alter table student drop column columntest;
+
+
+create table student(sno int primary key unique not null,sname char(10) not null,sdept char(30),ssex char(5),sage int);
+insert into student (sno,sname,sdept,ssex,sage) values (2001,'aa','IS1','ÄĞ1',21);
+insert into student (sno,sname,sdept,ssex,sage) values (2002,'cc','IS2','ÄĞ2',22);
+insert into student (sno,sname,sdept,ssex,sage) values (2003,'bb','IS3','ÄĞ3',23);
+insert into student (sno,sname,sdept,ssex,sage) values (2004,'ee','IS4','ÄĞ4',24);
+insert into student (sno,sname,sdept,ssex,sage) values (2005,'ff','IS5','ÄĞ5',25);
+insert into student (sno,sname,sdept,ssex,sage) values (2006,'gg','IS6','ÄĞ6',26);
+
+
+insert into student (sname,sdept,ssex,sage) values ('jack','IS','ÄĞ',21);
+
+
+delete from student where sage=19;
+
+update student set sdept='WL',ssex='Å®' where sno=0901051718;
+
+update student set sname='null',ssex='Å®' where sno=0901051709;
+
+select * from student;
+
+
+
+drop table test888;
+
+
+create table student3(sid int primary key unique not null,sname char(10) not null,grade int);
+alter table student add sex char(2);
+alter table student drop column sex;
+
+
+drop table student3;
+
+insert into student3 (sid,sname,grade) values (1001,'TianTian',99);
+insert into student3 (sid,sname,grade) values (1002,'WangWang',99);
+insert into student3 (sid,sname,grade) values (1003,'GaiGai',99);
+insert into student3 (sid,sname,grade) values (1004,'DiDi',99);
+insert into student3 (sid,sname,grade) values (1005,'HuHu',99);
+
+
+update student3 set grade=100 where sid=1005;
+delete from student3 where grade=100;
+
+select * from student3;
+
+50
+Sun Jun 20 15:48:22 CST 2021
+Sun Jun 20 15:48:23 CST 2021
+
+100 cerate insert
+Sun Jun 20 15:55:10 CST 2021
+Sun Jun 20 15:55:11 CST 2021
+
+
+

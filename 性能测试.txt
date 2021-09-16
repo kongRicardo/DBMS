@@ -1,0 +1,21 @@
+create insert drop 1000
+Sun Jun 20 17:01:56 CST 2021
+Sun Jun 20 17:02:04 CST 2021
+
+5173ms
+
+create insert drop 10000
+Sun Jun 20 17:04:15 CST 2021
+Sun Jun 20 17:04:59 CST 2021
+
+41490ms
+
+create insert drop 100000
+393187ms
+
+394230ms
+
+create insert drop 500000
+1965361ms
+
+预测100万，耗时1小时；
